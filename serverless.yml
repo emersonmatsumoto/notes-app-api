@@ -13,6 +13,10 @@ custom:
     webpackConfig: ./webpack.config.js
     includeModules: true
 
+resources:
+  # API Gateway Errors
+  - ${file(resources/api-gateway-errors.yml)}
+
 provider:
   name: aws
   runtime: nodejs8.10
